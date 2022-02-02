@@ -1,3 +1,28 @@
+# ORB-SLAM3 with GoPro
+Added functionality to run with own GoPro data from Urbste version: https://github.com/urbste/ORB_SLAM3.git
+
+## Installation
+
+Clone and build the repo:
+```
+git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
+
+cd ORB_SLAM3
+chmod +x build.sh
+./build.sh
+
+```
+
+## System testing
+
+mono: ./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/"(calibration file)".yaml (path to video)
+
+Example:
+```
+./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/gopro9_wide_setting.yaml ./Examples/testvideo.MP4
+
+```
+
 # ORB-SLAM3
 
 ### V1.0, December 22th, 2021

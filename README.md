@@ -7,7 +7,7 @@ Clone and build the repo:
 ```
 git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
 
-cd ORB_SLAM3
+cd gopro_orbslam3
 chmod +x build.sh
 ./build.sh
 

@@ -1,17 +1,17 @@
 # ORB-SLAM3 with GoPro
-Added functionality to run with own GoPro data from Urbste version [here] (https://github.com/urbste/ORB_SLAM3.git).
+Added functionality to run with own GoPro data from [Urbste version](https://github.com/urbste/ORB_SLAM3.git).
 
 ## Installation on arm64
 
 This version is tested on Mac M1 running UTM VM Ubuntu 20.04.
-UTM installation can be seen in [here] (https://mac.getutm.app/gallery/ubuntu-20-04).
+UTM installation can be seen in [here](https://mac.getutm.app/gallery/ubuntu-20-04).
 
 Add dependencies:
 ```
 sudo add-apt-repository "deb [arch=arm64] http://us.ports.ubuntu.com/ubuntu-ports/ xenial-security main multiverse restricted universe"
 sudo add-apt-repository "deb [arch=arm64] http://us.security.ubuntu.com/ubuntu/ xenial-security main multiverse restricted universe"
 ```
-Then follow the instruction from [here] (https://github.com/Mauhing/ORB_SLAM3.git).
+Then follow the instruction from [here](https://github.com/Mauhing/ORB_SLAM3.git).
 
 Clone and build the modified gopro_orbslam3 repo:
 ```

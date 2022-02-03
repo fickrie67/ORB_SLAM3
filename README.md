@@ -1,9 +1,19 @@
 # ORB-SLAM3 with GoPro
-Added functionality to run with own GoPro data from Urbste version: https://github.com/urbste/ORB_SLAM3.git
+Added functionality to run with own GoPro data from Urbste version [here] (https://github.com/urbste/ORB_SLAM3.git).
 
-## Installation
+## Installation on arm64
 
-Clone and build the repo:
+This version is tested on Mac M1 running UTM VM Ubuntu 20.04.
+UTM installation can be seen in [here] (https://mac.getutm.app/gallery/ubuntu-20-04).
+
+Add dependencies:
+```
+sudo add-apt-repository "deb [arch=arm64] http://us.ports.ubuntu.com/ubuntu-ports/ xenial-security main multiverse restricted universe"
+sudo add-apt-repository "deb [arch=arm64] http://us.security.ubuntu.com/ubuntu/ xenial-security main multiverse restricted universe"
+```
+Then follow the instruction from [here] (https://github.com/Mauhing/ORB_SLAM3.git).
+
+Clone and build the modified gopro_orbslam3 repo:
 ```
 git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
 
@@ -15,7 +25,9 @@ chmod +x build.sh
 
 ## System testing
 
-mono: ./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/"(calibration file)".yaml (path to video)
+mono: 
+
+"Executable path" "Vocabulary path" "calibration file.yaml path" "path to video.MP4"
 
 Example:
 ```

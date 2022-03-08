@@ -34,6 +34,8 @@ Example:
 ./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/gopro9_wide_setting.yaml ./Examples/testvideo.MP4
 
 ```
+## Camera calibration
+underwater environment presents challanges for camera especially for SLAM algorithm, where refraction due to light transmission in diffrent medium may leads to miscalculation of depth and size. Prior to ORB_SLAM system running, it is recommended to adjust the distortion caused by refraction. One of remapping adjustment for underwater camera is found in [Pinhole-Axial - Pinax camera model](https://github.com/fickrie67/Pinax-camera-model.git)
 
 # ORB-SLAM3
 

@@ -6,14 +6,42 @@ Added functionality to run with own GoPro data from [Urbste version](https://git
 This version is tested on Mac M1 running UTM VM Ubuntu 20.04.
 UTM installation can be seen in [here](https://mac.getutm.app/gallery/ubuntu-20-04).
 
-Add dependencies:
+### Add dependencies:
 ```
 sudo add-apt-repository "deb [arch=arm64] http://us.ports.ubuntu.com/ubuntu-ports/ xenial-security main multiverse restricted universe"
 sudo add-apt-repository "deb [arch=arm64] http://us.security.ubuntu.com/ubuntu/ xenial-security main multiverse restricted universe"
 ```
-Then follow the instruction from [here](https://github.com/Mauhing/ORB_SLAM3.git).
 
-Clone and build the modified gopro_orbslam3 repo:
+### Install open CV:
+
+```
+cd ~
+mkdir Dev && cd Dev
+git clone https://github.com/fickrie67/opencv.git
+cd opencv
+git checkout 3.2.0
+
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=Release -D WITH_CUDA=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make -j 3
+sudo make install
+```
+
+### Install Pangolin:
+
+```
+cd ~/Dev
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin 
+mkdir build 
+cd build 
+cmake .. -D CMAKE_BUILD_TYPE=Release 
+make -j 3 
+sudo make install
+```
+
+### Clone and build the modified gopro_orbslam3 repo:
 ```
 git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
 

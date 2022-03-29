@@ -12,6 +12,19 @@ sudo add-apt-repository "deb [arch=arm64] http://us.ports.ubuntu.com/ubuntu-port
 sudo add-apt-repository "deb [arch=arm64] http://us.security.ubuntu.com/ubuntu/ xenial-security main multiverse restricted universe"
 
 sudo apt update
+
+sudo apt-get install build-essential
+
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev libjasper-dev
+
+sudo apt-get install libglew-dev libboost-all-dev libssl-dev
+
+sudo apt install libeigen3-dev
+
+sudo apt-get install libgsl-dev
+
 ```
 
 ### Install open CV:

@@ -10,6 +10,8 @@ UTM installation can be seen in [here](https://mac.getutm.app/gallery/ubuntu-20-
 ```
 sudo add-apt-repository "deb [arch=arm64] http://us.ports.ubuntu.com/ubuntu-ports/ xenial-security main multiverse restricted universe"
 sudo add-apt-repository "deb [arch=arm64] http://us.security.ubuntu.com/ubuntu/ xenial-security main multiverse restricted universe"
+
+sudo apt update
 ```
 
 ### Install open CV:
@@ -34,6 +36,7 @@ sudo make install
 cd ~/Dev
 git clone https://github.com/stevenlovegrove/Pangolin.git
 cd Pangolin 
+
 mkdir build 
 cd build 
 cmake .. -D CMAKE_BUILD_TYPE=Release 

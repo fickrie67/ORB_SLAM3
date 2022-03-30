@@ -39,6 +39,14 @@ git checkout 3.2.0
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=Release -D WITH_CUDA=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
+
+gedit ./modules/videoio/src/cap_ffmpeg_impl.hpp
+
+copy and save:
+#define AV_CODEC_FLAG_GLOBAL_HEADER (1 << 22)
+#define CODEC_FLAG_GLOBAL_HEADER AV_CODEC_FLAG_GLOBAL_HEADER
+#define AVFMT_RAWPICTURE 0x0020
+
 make -j 3
 sudo make install
 ```

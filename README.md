@@ -65,7 +65,7 @@ make -j 3
 sudo make install
 ```
 
-### Clone and build the modified gopro_orbslam3 repo:
+### Install the modified gopro_orbslam3 repo:
 ```
 git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
 

@@ -67,6 +67,7 @@ sudo make install
 
 ### Install the modified gopro_orbslam3:
 ```
+cd ~/Dev
 git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
 
 cd gopro_orbslam3

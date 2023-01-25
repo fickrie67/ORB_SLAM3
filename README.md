@@ -77,32 +77,22 @@ chmod +x build.sh
 ```
 
 ## System testing
+
 ```
-mono: 
 
 "Executable path" "Vocabulary path" "calibration file.yaml path" "path to video.MP4"
 
 Example:
 cd ~/Dev/ORB_SLAM3
 
-#Pick of them below that you want to run
-
 # Mono
 ./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
-
-# Mono + Inertial
-./Examples/Monocular-Inertial/mono_inertial_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Monocular-Inertial/EuRoC_TimeStamps/MH01.txt dataset-MH01_monoi
-
-# Stereo
-./Examples/Stereo/stereo_euroc ./Vocabulary/ORBvoc.txt ./Examples/Stereo/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Stereo/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereo
-
-# Stereo + Inertial
-./Examples/Stereo-Inertial/stereo_inertial_euroc ./Vocabulary/ORBvoc.txt ./Examples/Stereo-Inertial/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Stereo-Inertial/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereoi```
 
 #Gopro
 ./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/gopro9_wide_setting.yaml ./Examples/testvideo.MP4
 
 ```
+
 ## Camera calibration
 underwater environment presents challanges for camera especially for SLAM algorithm, where refraction due to light transmission in diffrent medium may leads to miscalculation of depth and size. Prior to ORB_SLAM system running, it is recommended to adjust the distortion caused by refraction. One of remapping adjustment for underwater camera is found in [Pinhole-Axial - (Pinax) camera model](https://github.com/fickrie67/Pinax-camera-model.git).
 

@@ -77,7 +77,7 @@ chmod +x build.sh
 ```
 
 ## System testing
-
+```
 mono: 
 
 "Executable path" "Vocabulary path" "calibration file.yaml path" "path to video.MP4"

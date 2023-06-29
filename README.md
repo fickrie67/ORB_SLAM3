@@ -97,7 +97,7 @@ mono
 ./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/gopro9_wide_setting.yaml ./Examples/testvideo.MP4
 
 mono-inertial
-./Examples/Monocular-Inertial/mono_inertial_gopro_vi ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/gopro9_wide_setting1.yaml ./Examples/GL010162.LRV ./Examples/GL010162b.json
+./Examples/Monocular-Inertial/mono_inertial_gopro_vi ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/gopro10_wide_setting.yaml ./Examples/GL010162.LRV ./Examples/GL010162b.json
 
 
 ```

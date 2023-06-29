@@ -99,6 +99,7 @@ mono
 mono-inertial
 ./Examples/Monocular-Inertial/mono_inertial_gopro_vi ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/gopro9_wide_setting1.yaml ./Examples/GL010162.LRV ./Examples/GL010162b.json
 
+
 ```
 
 ## Camera calibration

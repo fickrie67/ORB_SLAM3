@@ -93,8 +93,11 @@ cd ~/Dev/ORB_SLAM3
 ./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
 
 #Gopro
+mono
 ./Examples/Monocular/mono_gopro ./Vocabulary/ORBvoc.txt ./Examples/Monocular/gopro9_wide_setting.yaml ./Examples/testvideo.MP4
 
+mono-inertial
+./mono_inertial_gopro_vi path_to_vocabulary path_to_settings path_to_video path_to_telemetry
 ```
 
 ## Camera calibration

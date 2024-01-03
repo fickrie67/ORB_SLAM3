@@ -34,43 +34,6 @@ sudo apt-get install libgsl-dev
 ### Install open CV:
 
 ```
-cd ~
-mkdir Dev && cd Dev
-git clone https://github.com/fickrie67/opencv.git
-cd opencv
-git checkout 3.2.0
-
-mkdir build
-cd build
-cmake -D CMAKE_BUILD_TYPE=Release -D WITH_CUDA=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
-
-gedit ./modules/videoio/src/cap_ffmpeg_impl.hpp
-
-copy and save:
-#define AV_CODEC_FLAG_GLOBAL_HEADER (1 << 22)
-#define CODEC_FLAG_GLOBAL_HEADER AV_CODEC_FLAG_GLOBAL_HEADER
-#define AVFMT_RAWPICTURE 0x0020
-
-make -j 3
-sudo make install
-```
-
-### Install Pangolin:
-
-```
-cd ~/Dev
-git clone https://github.com/stevenlovegrove/Pangolin.git
-cd Pangolin 
-
-mkdir build 
-cd build 
-cmake .. -D CMAKE_BUILD_TYPE=Release 
-make -j 3 
-sudo make install
-```
-
-### Install the modified gopro_orbslam3:
-```
 sudo apt install build-essential cmake git pkg-config libgtk-3-dev \
     libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
     libxvidcore-dev libx264-dev libjpeg-dev libpng-dev libtiff-dev \
@@ -104,6 +67,30 @@ sudo make install
 pkg-config --modversion opencv4
 python3 -c "import cv2; print(cv2.__version__)"
 
+```
+
+### Install Pangolin:
+
+```
+cd ~/Dev
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin 
+
+mkdir build 
+cd build 
+cmake .. -D CMAKE_BUILD_TYPE=Release 
+make -j 3 
+sudo make install
+```
+
+### Install the modified gopro_orbslam3:
+```
+cd ~/Dev
+git clone https://github.com/fickrie67/ORB_SLAM3.git gopro_orbslam3
+
+cd gopro_orbslam3
+chmod +x build.sh
+./build.sh
 
 ```
 

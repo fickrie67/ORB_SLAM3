@@ -113,6 +113,11 @@ mono
 mono-inertial
 ./Examples/Monocular-Inertial/mono_inertial_gopro_vi ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/gopro9_wide_setting.yaml ./Examples/testvideo.MP4 ./Examples/testvideo.json
 
+#ROS
+rosrun ORB_SLAM3 Mono Vocabulary/ORBvoc.txt Examples/Monocular/gopro.yaml
+
+
+
 
 ```
 
